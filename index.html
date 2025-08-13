@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlogSphere | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar container">
+    <div class="logo">BlogSphere</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to BlogSphere</h2>
+    <p>Your daily dose of tech, lifestyle & creativity.</p>
+    <a class="btn" href="#blogs">Explore Blogs</a>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Latest Posts</h2>
+    <div class="filters">
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="tech">Tech</option>
+        <option value="lifestyle">Lifestyle</option>
+        <option value="travel">Travel</option>
+      </select>
+      <select id="sort-by">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+
+    <div class="blog-grid" id="blog-list">
+      <!-- JS will populate blog cards here -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 BlogSphere. All rights reserved.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
